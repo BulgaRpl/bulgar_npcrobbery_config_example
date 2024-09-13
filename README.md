@@ -1,0 +1,2 @@
+# bulgar_npcrobbery_config_example
+bulgar_npcrobbery_config_example
