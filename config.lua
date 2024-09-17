@@ -15,6 +15,9 @@ Config = {}
 -- Dev Stuff Dont use on Live Server!
 Config.Developer = false
 
+-- Select Framework
+Config.Framework = 'VORP' -- or 'REDEMRPREBOOT' or 'REDEMRP' or 'QBRCore' or 'RSGCore'
+
 -- Discord Logs
 Config.EnableLogs = false
 Config.LogsWebhook = "https://discord.com/api/webhooks/"
@@ -51,8 +54,11 @@ Config.RobKey = 0xCEFD9220 -- E
 Config.InteractionDistance = 3.0 -- Distance to show the rob button when holding "HoldKey"
 Config.BlockRobbingIfPlayerIsNearRange = 6.0 -- Prevent robbing Range for an NPC in the same time if player stands near you...
 
--- Enable/Disable vorp_progressbar
-Config.Progressbar = false
+-- Enable/Disable progressbars
+Config.Progressbar = false -- This will use the code from bellow so if u want u can code own progressbars script.
+Config.ProgressBarFunction = function(robbtime)
+ -- ITS CONFIGURED HERE AFTER U GET THE SCRIPT
+end
 
 -- Time to take for robbery / Random duration between RobberyTimeMin and RobberyTimeMax
 Config.RobberyTimeMin = 8000 -- 8 Seconds
