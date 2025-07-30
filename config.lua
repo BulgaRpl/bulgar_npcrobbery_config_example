@@ -53,10 +53,14 @@ Config.HoldKey = 0x760A9C6F -- G
 Config.RobKey = 0xCEFD9220 -- E
 Config.InteractionDistance = 3.0 -- Distance to show the rob button when holding "HoldKey"
 Config.BlockRobbingIfPlayerIsNearRange = 6.0 -- Prevent robbing Range for an NPC in the same time if player stands near you...
+Config.AllowStopRobbing = true -- Let the robbery be interrupted any time by key "Config.RobKey"
 
 -- Enable/Disable progressbars
 Config.Progressbar = false -- This will use the code from bellow so if u want u can code own progressbars script.
 Config.ProgressBarFunction = function(robbtime)
+ -- ITS CONFIGURED HERE AFTER U GET THE SCRIPT
+end
+Config.ProgressBarFunctionCancel = function() -- Function to cancel progressbar display when robbery is aborted by player, if using other progressbar u need to code it here.
  -- ITS CONFIGURED HERE AFTER U GET THE SCRIPT
 end
 
@@ -107,6 +111,8 @@ Config.Language = { -- ITS CONFIGURED HERE AFTER U GET THE SCRIPT
     [19] = {text = "EXAMPLE TRANSLATION",}, -- COLOR FIX / JUST LEAVE IT EMPTY IF U DONT WANT COLORS
     [20] = {text = "EXAMPLE TRANSLATION",},
     [21] = {text = "EXAMPLE TRANSLATION",},
+    [22] = {text = "EXAMPLE TRANSLATION",},
+    [23] = {text = "EXAMPLE TRANSLATION",},
 }
 
 -- Robbing Animation NPC / in case u want to change something
