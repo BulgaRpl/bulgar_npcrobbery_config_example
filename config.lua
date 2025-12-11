@@ -51,6 +51,8 @@ Config.FredStress = -5 -- Setup Stress if u want for Config.FredMetabolism while
 -- Interaction distance for NPC + Some Settings
 Config.HoldKey = 0x760A9C6F -- G
 Config.RobKey = 0xCEFD9220 -- E
+Config.RobByCommand = false -- If true u can also rob by using the command below.
+Config.RobCommand = 'rob' -- Command to start robbery if "Config.RobByCommand" is set to true
 Config.InteractionDistance = 3.0 -- Distance to show the rob button when holding "HoldKey"
 Config.BlockRobbingIfPlayerIsNearRange = 6.0 -- Prevent robbing Range for an NPC in the same time if player stands near you...
 Config.AllowStopRobbing = true -- Let the robbery be interrupted any time by key "Config.RobKey"
@@ -158,3 +160,4 @@ Config.AllowedTownsToStartRobbery = {
 Config.CurrentTown = function()
  -- ITS CONFIGURED HERE AFTER U GET THE SCRIPT
 end
+
