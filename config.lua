@@ -146,6 +146,7 @@ Config.FirearmWeapons = {
 }
 
 -- Blocked NPCs, these NPCs cannot be robbed
+Config.BlockAllNPCsSpawnedByOtherScripts = false -- If true any NPC that has ben spawned by a script is blocked
 Config.BlockedNPC = {
  -- ITS CONFIGURED HERE AFTER U GET THE SCRIPT
 }
@@ -160,4 +161,5 @@ Config.AllowedTownsToStartRobbery = {
 Config.CurrentTown = function()
  -- ITS CONFIGURED HERE AFTER U GET THE SCRIPT
 end
+
 
