@@ -81,13 +81,13 @@ Config.RobMoneyAmountMax = 50 -- Max money amount player can find on NPCs while 
 Config.FindItemsChance = 100  -- 100% chance to find items on robbed NPCs
 Config.MinItemsToGet = 0 -- Min items player can drop in one robbery from the list bellow (For example player can get 3 different items in this case)
 Config.MaxItemsToGet = 3 -- Max items player can drop in one robbery from the list bellow (For example player can get 3 different items in this case)
-Config.itemList = { -- List of possible items that can be robbed with drop chance / my list is just an example add your own items here :)
-    {name = "kamien", label = "Kamien", chance = 1.0}, -- 100% chance
-    {name = "zelazo", label = "Ruda zelaza", chance = 0.5}, -- 50% chance
-    {name = "sol", label = "Sol", chance = 0.3}, -- 30% chance
-    {name = "deska", label = "Deska", chance = 0.1}, -- 10% chance
-    {name = "ladny_kw_drewna", label = "Ladny kawalek drewna", chance = 0.05}, -- 5% chance
-    {name = "ziemniak", label = "Ziemniak", chance = 0.01}, -- 1% chance
+Config.itemList = { -- List of possible items that can be robbed with drop chance & min/max drop per item / my list is just an example add your own items here :)
+    {name = "kamien", label = "Kamien", chance = 1.0, min = 1, max = 3}, -- 100% chance + min/max drop of this item
+    {name = "zelazo", label = "Ruda zelaza", chance = 0.5, min = 1, max = 3}, -- 50% chance + min/max drop of this item
+    {name = "sol", label = "Sol", chance = 0.3, min = 1, max = 3}, -- 30% chance + min/max drop of this item
+    {name = "deska", label = "Deska", chance = 0.1, min = 1, max = 3}, -- 10% chance + min/max drop of this item
+    {name = "ladny_kw_drewna", label = "Ladny kawalek drewna", chance = 0.05, min = 1, max = 3}, -- 5% chance + min/max drop of this item
+    {name = "ziemniak", label = "Ziemniak", chance = 0.01, min = 1, max = 3}, -- 1% chance + min/max drop of this item
 }
 
 -- Translations
@@ -161,5 +161,6 @@ Config.AllowedTownsToStartRobbery = {
 Config.CurrentTown = function()
  -- ITS CONFIGURED HERE AFTER U GET THE SCRIPT
 end
+
 
 
